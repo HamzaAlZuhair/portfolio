@@ -1,0 +1,25 @@
+import Image from 'next/image';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+
+interface ProjectProps {
+  title: string;
+  description: string;
+  link: string;
+  src: string;
+  onClick?: () => void;
+}
+
+export default function Project({ title, description, link, src, onClick }: ProjectProps) {
+  return (
+    <div className="bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer" onClick={onClick}>
+      <p className="text-center">{title}</p>
+      <p className='mb-5 text-center'>{description}</p>
+      <Image src={src} alt={title} width={800} height={450} />
+      <a href={link} target="_blank">
+      <div className='flex place-items-center gap-1 bg-green-900/70 p-2 rounded-xl hover:scale-105 transition-transform cursor-pointer w-fit ml-auto mt-5'>
+        <span>Visit Site</span><FaExternalLinkAlt />
+      </div>
+      </a>
+    </div>
+  );
+}
