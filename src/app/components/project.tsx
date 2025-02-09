@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-
+import { Roboto } from 'next/font/google';
+const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 interface ProjectProps {
   title: string;
   description: string;
@@ -11,8 +12,8 @@ interface ProjectProps {
 
 export default function Project({ title, description, link, src, onClick }: ProjectProps) {
   return (
-    <div className="bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer" onClick={onClick}>
-      <p className="text-center">{title}</p>
+    <div className={`bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer ${roboto.className}`} onClick={onClick}>
+      <p className="text-center text-xl">{title}</p>
       <p className='mb-5 text-center'>{description}</p>
       <Image src={src} alt={title} width={800} height={450} />
       <a href={link} target="_blank">

@@ -14,13 +14,18 @@ export default {
       },
       keyframes: {
         slideIn: {
-          "0%": { transform: "translateX(-150%)" },
+          "0%": { transform: "translateX(-200%)" },
           "100%": { transform: "translateX(0)" },
-        }
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         slideIn: "slideIn 0.7s ease-in-out forwards",
-      }
+        fadeIn: 'fadeIn 1s ease-in-out forwards',
+      },
     },
   },
   plugins: [],

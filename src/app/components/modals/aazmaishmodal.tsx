@@ -1,8 +1,11 @@
 import {SlClose} from 'react-icons/sl';
 import Image from 'next/image';
+import { Roboto } from 'next/font/google';
+const roboto = Roboto({ weight: '400', subsets: ['latin'] });
+
 export default function AazmaishModal({onClose}: {onClose: () => void}) {
     return(
-        <div className="fixed inset-0 flex flex-row items-center justify-center bg-black/50">
+        <div className={`fixed inset-0 flex flex-row items-center justify-center bg-black/50 ${roboto.className}`}>
           <div className="bg-[#1b1b1b] rounded-lg text-white relative w-[80%] h-[90%] overflow-y-auto">
           <SlClose onClick={onClose} size={30} className="cursor-pointer sticky top-1.5 right-1 z-10 ml-auto text-white hover:text-red-600" />
             <div className="absolute top-0 left-0 right-0 rounded-t-md pl-5 pt-3 text-2xl">

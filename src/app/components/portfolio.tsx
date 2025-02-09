@@ -8,6 +8,15 @@ import GalbaatModal from './modals/galbaatmodal';
 import CbModal from './modals/cbmodal';
 import AazmaishModal from './modals/aazmaishmodal';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { Roboto } from 'next/font/google';
+const roboto = Roboto({ weight: '400', subsets: ['latin'] });
+interface ProjectProps {
+  title: string;
+  description: string;
+  link: string;
+  src: string;
+  onClick?: () => void;
+}
 
 export default function Portfolio() {
 	const [selectedProject, setSelectedProject] = useState("");
@@ -28,9 +37,9 @@ export default function Portfolio() {
             src="/project_images/creatorsbalance/home.png"
 						onClick={() => setSelectedProject("Creator's Balance")}
           />
-          <div className="bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer"
+          <div className={`bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer ${roboto.className}`}
 					onClick={() => setSelectedProject("Aazmaish")}>
-            <p className="text-center">Aazmaish</p>
+            <p className="text-center text-xl">Aazmaish</p>
             <p className='mb-5 text-center'>Real-time quiz app for windows made using Qt C++ and Firebase REST APIs</p>
             <Image src="/project_images/aazmaish/welcome.png" alt="Aazmaish" width={800} height={450} />
             <a href="https://github.com/hamzaalzuhair/aazmaish-quizapp" target="_blank">
