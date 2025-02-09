@@ -16,7 +16,7 @@ export default function Home() {
         <Image src={webImage} alt="background" layout="fill" objectFit="cover" priority placeholder="blur" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
         </div>
-        <div id="welcome" className="flex flex-col md:flex-row items-center p-5 justify-evenly w-full min-h-screen scroll-smooth bg-fixed">
+        <div id="welcome" className="flex flex-col md:flex-row items-center p-5 justify-evenly w-full min-h-screen scroll-smooth bg-fixed text-white">
           <div>
             <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
             <p className="text-6xl font-[consolas] translate-x-[-200%] animate-slideIn" style={{animationDelay: "0.7s"}}>A web developer</p>
