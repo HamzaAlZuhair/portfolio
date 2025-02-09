@@ -11,9 +11,11 @@ import webImage from '../assets/web.jpg';
 export default function Home() {
   return (
     <div className="w-full scroll-smooth">
-      <div>
+      <div className='relative'>
+        <div className='fixed inset-0 -z-10'>
         <Image src={webImage} alt="background" layout="fill" objectFit="cover" priority placeholder="blur" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+        </div>
         <div id="welcome" className="flex flex-col md:flex-row items-center p-5 justify-evenly w-full min-h-screen scroll-smooth bg-fixed">
           <div>
             <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
@@ -24,7 +26,7 @@ export default function Home() {
                 View my work
               </a>
               <a href="https://github.com/hamzaalzuhair" target="_blank" rel="noopener noreferrer"
-              className='block flex flex-row items-center w-fit justify-center gap-2 bg-[#333] text-white p-3 rounded-full text-3xl hover:scale-110 transition-transform'>
+              className='block flex flex-row items-center w-fit justify-center gap-2 bg-[#333] text-white my-5 p-3 rounded-full text-3xl hover:scale-110 transition-transform'>
                 <FaGithub size={32} />
                 <span className={mona_sans.className}>GitHub Profile</span>
               </a>
@@ -39,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="expretise" className="flex flex-col justify-evenly items-evenly min-h-screen w-full p-5">
+      <div id="expretise" className="flex flex-col justify-evenly items-evenly min-h-screen w-full p-5 bg-[#0a0a0a]">
         <p className="text-4xl font-[consolas] text-center my-5">My expertise</p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-20 p-10 justify-items-center">
           <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"

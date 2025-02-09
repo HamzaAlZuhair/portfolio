@@ -6,7 +6,7 @@ const mona_sans = Mona_Sans({ subsets: ['latin'] });
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 export default function Contact() {
   return(
-    <div id='contact' className='flex flex-col gap-5 justify-evenly items-center p-5 h-[50vh] md:h-screen font-[consolas] text-4xl'>
+    <div id='contact' className='flex flex-col gap-5 justify-evenly items-center p-5 h-[50vh] md:h-screen font-[consolas] text-4xl bg-[#0a0a0a]'>
       <p>Contact me</p>
       <div className="flex flex-col gap-5">
         <a href="mailto:hamzaaz00721@gmail.com" className={`underline ${roboto.className} my-2 text-center text-2xl md:text-4xl`}>hamzaaz00721@gmail.com</a>
