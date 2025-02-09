@@ -14,7 +14,7 @@ const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 export default function Portfolio() {
 	const [selectedProject, setSelectedProject] = useState("");
 	return(
-		<div id="portfolio-projects" className="flex flex-col justify-evenly items-evenly h-screen">
+		<div id="portfolio-projects" className="flex flex-col justify-evenly items-evenly min-h-screen">
         <p className="text-4xl font-[consolas] text-center my-5">Projects</p>
         <div className='md:grid md:grid-cols-3 gap-10 p-5 flex flex-col'>
           <Project title="Galbaat"

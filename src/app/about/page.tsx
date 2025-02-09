@@ -13,8 +13,7 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <div className="p-10 w-[80%]">
+      <div className="py-5 md:w-[80%]">
         <p>With expertise in modern front-end frameworks and integrating back-end services, I deliver high-quality websites
           and applications that not only look great but perform flawlessly. I can handle everything from design to development and deployment.
           <br /><br />My expertise: <br/>

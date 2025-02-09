@@ -6,13 +6,13 @@ const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 export default function CbModal({onClose}: {onClose: () => void}) {
     return(
         <div className={`fixed inset-0 flex flex-row items-center justify-center bg-black/50 ${roboto.className}`}>
-          <div className="bg-[#1b1b1b] rounded-lg text-white relative w-[80%] h-[90%] overflow-y-auto">
-          <SlClose onClick={onClose} size={30} className="cursor-pointer sticky top-1.5 right-1 z-10 ml-auto text-white hover:text-red-600" />
-            <div className="absolute top-0 left-0 right-0 rounded-t-md pl-5 pt-3 text-2xl">
+          <div className="bg-[#1b1b1b] rounded-lg text-white relative w-[95%] md:w-[80%] h-[90%] overflow-y-auto">
+          <SlClose onClick={onClose} size={30} className="cursor-pointer sticky top-2 right-1 z-10 ml-auto text-white hover:text-red-600" />
+            <div className="md:absolute top-0 left-0 right-0 rounded-t-md pl-5 pt-3 text-2xl">
               <span>Creator&apos;s Balance - E-commerce store made using WooCommerce</span>
             </div>
-            <div className="flex flex-row justify-evenly mt-5 h-[90%] w-full gap-2">
-              <div className='w-[35%] p-5'>
+            <div className="flex flex-col md:flex-row justify-evenly mt-5 h-[90%] w-full gap-2">
+              <div className='md:w-[35%] p-5'>
                 <p className="">
                   Designed, developed and deployed a fully functional e-commerce store using Wordpress Woocommerce
                   for my client. Creator&apos;s Balance is an online business selling health and food products.
@@ -25,8 +25,8 @@ export default function CbModal({onClose}: {onClose: () => void}) {
                   </a>
                 </p>
               </div>
-              <div className='overflow-hidden rounded-lg w-[65%]'>
-              <div className="flex flex-col gap-2 overflow-y-auto w-full h-full">
+              <div className='md:overflow-hidden rounded-lg md:w-[65%]'>
+              <div className="flex flex-col gap-2 md:overflow-y-auto w-full h-full">
                 <Image src="/project_images/creatorsbalance/home.png" alt="creatorsbalance" width={1600} height={900} />
                 <Image src="/project_images/creatorsbalance/home2.png" alt="creatorsbalance" width={1600} height={900} />
                 <Image src="/project_images/creatorsbalance/home3.png" alt="creatorsbalance" width={1600} height={900} />

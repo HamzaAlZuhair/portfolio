@@ -6,45 +6,42 @@ import { Mona_Sans } from 'next/font/google';
 import { FaGithub } from 'react-icons/fa';
 import Contact from './components/contact';
 import Image from 'next/image';
-import Head from 'next/head';
-
-const webBackground = "/web.jpg";
 const mona_sans = Mona_Sans({ subsets: ['latin'] });
+import webImage from '../assets/web.jpg';
 export default function Home() {
   return (
-    <>
-    <Head>
-      <link rel="preload" href="/web.jpg" as="image" />
-    </Head>
     <div className="w-full scroll-smooth">
-      <div id="welcome" className="flex flex-row items-center justify-evenly w-full h-screen scroll-smooth bg-fixed"
-      style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${webBackground})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-        <div>
-          <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
-          <p className="text-6xl font-[consolas] translate-x-[-200%] animate-slideIn" style={{animationDelay: "0.7s"}}>A web developer</p>
-          <div className='opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
-            <p className="animate-bounce my-5">hehe</p>
-            <a href="#portfolio-projects" className="block bg-gray-500 text-white hover:bg-blue-900/70 my-5 hover:scale-110 transition-transform w-fit rounded-xl p-5">
-              View my work
-            </a>
-            <a href="https://github.com/hamzaalzuhair" target="_blank" rel="noopener noreferrer"
-            className='block flex flex-row items-center w-fit justify-center gap-2 bg-[#333] text-white p-3 rounded-full text-3xl hover:scale-110 transition-transform'>
-              <FaGithub size={32} />
-              <span className={mona_sans.className}>GitHub Profile</span>
-            </a>
+      <div>
+        <Image src={webImage} alt="background" layout="fill" objectFit="cover" priority placeholder="blur" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+        <div id="welcome" className="flex flex-col md:flex-row items-center p-5 justify-evenly w-full h-screen scroll-smooth bg-fixed">
+          <div>
+            <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
+            <p className="text-6xl font-[consolas] translate-x-[-200%] animate-slideIn" style={{animationDelay: "0.7s"}}>A web developer</p>
+            <div className='opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
+              <p className="animate-bounce my-5">hehe</p>
+              <a href="#portfolio-projects" className="block bg-gray-500 text-white hover:bg-blue-900/70 my-5 hover:scale-110 transition-transform w-fit rounded-xl p-5">
+                View my work
+              </a>
+              <a href="https://github.com/hamzaalzuhair" target="_blank" rel="noopener noreferrer"
+              className='block flex flex-row items-center w-fit justify-center gap-2 bg-[#333] text-white p-3 rounded-full text-3xl hover:scale-110 transition-transform'>
+                <FaGithub size={32} />
+                <span className={mona_sans.className}>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+          <div className='flex flex-col items-center justify-center opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
+          <Image src="/pfp.jpg" alt="picture" width={200} height={200} className="rounded-full" />
+          <Link href="/about">
+          <p className="bg-gray-500 p-5 rounded-xl hover:scale-110 hover:bg-blue-900/70 cursor-pointer transition-transform my-5 text-center w-fit">
+            About Me
+          </p></Link>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
-        <Image src="/pfp.jpg" alt="picture" width={200} height={200} className="rounded-full" />
-        <Link href="/about">
-        <p className="bg-gray-500 p-5 rounded-xl hover:scale-110 hover:bg-blue-900/70 cursor-pointer transition-transform my-5 text-center w-fit">
-          About Me
-        </p></Link>
-        </div>
       </div>
-      <div id="expretise" className="flex flex-col justify-evenly items-evenly h-screen w-full">
+      <div id="expretise" className="flex flex-col justify-evenly items-evenly h-screen w-full p-5">
         <p className="text-4xl font-[consolas] text-center my-5">My expertise</p>
-        <div className="grid grid-cols-3 gap-20 p-10 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-20 p-10 justify-items-center">
           <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"
           className="flex items-center justify-center text-center hover:scale-110 transition-transform cursor-pointer">
             <FaReact size={40} color="#61DAFB"/>
@@ -110,6 +107,5 @@ export default function Home() {
       <Portfolio />
       <Contact />
     </div>
-    </>
   );
 }
