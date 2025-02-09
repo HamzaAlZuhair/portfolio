@@ -10,13 +10,6 @@ import AazmaishModal from './modals/aazmaishmodal';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Roboto } from 'next/font/google';
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
-interface ProjectProps {
-  title: string;
-  description: string;
-  link: string;
-  src: string;
-  onClick?: () => void;
-}
 
 export default function Portfolio() {
 	const [selectedProject, setSelectedProject] = useState("");

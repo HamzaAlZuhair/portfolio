@@ -1,7 +1,7 @@
-import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
-import { Source_Sans_3, Mona_Sans, Roboto } from 'next/font/google';
+import { FaGithub } from 'react-icons/fa';
+import { Mona_Sans, Roboto } from 'next/font/google';
 import { SiUpwork } from 'react-icons/si';
-const source_sans = Source_Sans_3({ subsets: ['latin'] });
+
 const mona_sans = Mona_Sans({ subsets: ['latin'] });
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 export default function Contact() {

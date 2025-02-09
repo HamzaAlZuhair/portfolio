@@ -14,7 +14,7 @@ export default function Home() {
       <div id="welcome" className="flex flex-row items-center justify-evenly w-full h-screen scroll-smooth bg-fixed"
       style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./web.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div>
-          <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I'm Hamza</p>
+          <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
           <p className="text-6xl font-[consolas] translate-x-[-200%] animate-slideIn" style={{animationDelay: "0.7s"}}>A web developer</p>
           <div className='opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
             <p className="animate-bounce my-5">hehe</p>
