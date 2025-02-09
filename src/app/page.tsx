@@ -14,7 +14,7 @@ export default function Home() {
       <div>
         <Image src={webImage} alt="background" layout="fill" objectFit="cover" priority placeholder="blur" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
-        <div id="welcome" className="flex flex-col md:flex-row items-center p-5 justify-evenly w-full h-screen scroll-smooth bg-fixed">
+        <div id="welcome" className="flex flex-col md:flex-row items-center p-5 justify-evenly w-full min-h-screen scroll-smooth bg-fixed">
           <div>
             <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
             <p className="text-6xl font-[consolas] translate-x-[-200%] animate-slideIn" style={{animationDelay: "0.7s"}}>A web developer</p>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="expretise" className="flex flex-col justify-evenly items-evenly h-screen w-full p-5">
+      <div id="expretise" className="flex flex-col justify-evenly items-evenly min-h-screen w-full p-5">
         <p className="text-4xl font-[consolas] text-center my-5">My expertise</p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-20 p-10 justify-items-center">
           <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"
