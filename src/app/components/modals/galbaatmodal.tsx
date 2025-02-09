@@ -12,14 +12,14 @@ export default function GalbaatModal({onClose}: {onClose: () => void}) {
               <span>Galbaat - a web based chat app</span>
             </div>
             <div className="flex flex-col md:flex-row justify-evenly mt-5 h-[90%] w-full gap-2">
-              <div className='w-md:[35%] p-5'>
+              <div className='md:w-[35%] p-5'>
                 <p className="">Designed and developed Galbaat, a web based chat app using React and Firebase. 
                   <br/><br/>Website link:&nbsp;
                   <a href="https://galbaat-chatapp.firebaseapp.com" target="_blank" className='underline'>
                     https://galbaat-chatapp.firebaseapp.com
                   </a><br/>
                   Repo Link:&nbsp;
-                  <a href='https://github.com/hamzaalzuhair/galbaat' target='_blank' className='underline'>
+                  <a href='https://github.com/hamzaalzuhair/galbaat' target='_blank' className='underline break-words'>
                     https://github.com/hamzaalzuhair/galbaat
                   </a>
                   <br/><br/>

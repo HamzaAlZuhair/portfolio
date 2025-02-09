@@ -21,23 +21,23 @@ export default function Home() {
             <p className="text-5xl my-5 translate-x-[-200%] animate-slideIn">Hiii, I&apos;m Hamza</p>
             <p className="text-6xl font-[consolas] translate-x-[-200%] animate-slideIn" style={{animationDelay: "0.7s"}}>A web developer</p>
             <div className='opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
-              <p className="animate-bounce my-5">hehe</p>
-              <a href="#portfolio-projects" className="block bg-gray-500 text-white hover:bg-blue-900/70 my-5 hover:scale-110 transition-transform w-fit rounded-xl p-5">
-                View my work
-              </a>
-              <a href="https://github.com/hamzaalzuhair" target="_blank" rel="noopener noreferrer"
+            <p className="animate-bounce my-5">hehe</p>
+            <a href="#portfolio-projects" className="block bg-gray-700 text-white hover:bg-blue-900/70 my-5 hover:scale-110 transition-transform w-fit rounded-xl p-5">
+              View my work
+            </a>
+            <a href="https://github.com/hamzaalzuhair" target="_blank" rel="noopener noreferrer"
               className='block flex flex-row items-center w-fit justify-center gap-2 bg-[#333] text-white my-5 p-3 rounded-full text-3xl hover:scale-110 transition-transform'>
-                <FaGithub size={32} />
-                <span className={mona_sans.className}>GitHub Profile</span>
-              </a>
-            </div>
+              <FaGithub size={32} />
+              <span className={mona_sans.className}>GitHub Profile</span>
+            </a>
+          </div>
           </div>
           <div className='flex flex-col items-center justify-center opacity-0 animate-fadeIn' style={{animationDelay: "1.4s"}}>
           <Image src="/pfp.jpg" alt="picture" width={200} height={200} className="rounded-full" />
           <Link href="/about">
-          <p className="bg-gray-500 p-5 rounded-xl hover:scale-110 hover:bg-blue-900/70 cursor-pointer transition-transform my-5 text-center w-fit">
-            About Me
-          </p></Link>
+            <p className="bg-gray-700 p-5 rounded-xl hover:scale-110 hover:bg-blue-900/70 cursor-pointer transition-transform my-5 text-center w-fit">
+              About Me
+            </p></Link>
           </div>
         </div>
       </div>
