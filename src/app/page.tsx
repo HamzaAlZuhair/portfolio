@@ -2,6 +2,7 @@ import { FaReact, FaWordpress } from 'react-icons/fa';
 import { SiNextdotjs, SiFirebase, SiWoocommerce, SiJavascript, SiTypescript, SiHtml5, SiTailwindcss, SiCss3, SiBootstrap, SiSass } from 'react-icons/si';
 import Link from 'next/link';
 import Portfolio from './components/portfolio';
+import Certifications from './components/certifications/certifications';
 import { Mona_Sans } from 'next/font/google';
 import { FaGithub } from 'react-icons/fa';
 import Contact from './components/contact';
@@ -107,6 +108,7 @@ export default function Home() {
         </div>
       </div>
       <Portfolio />
+      <Certifications />
       <Contact />
     </div>
   );
