@@ -13,7 +13,8 @@ interface CertificateProps {
 
 export default function Certficate({title, description, link, src, onClick}: CertificateProps){
   return(
-  <div className={`bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer ${roboto.className}`} onClick={onClick}>
+  <div className={`bg-green-900/50 p-5 rounded-xl hover:scale-105 transition-transform cursor-pointer
+  flex flex-col justify-evenly ${roboto.className}`} onClick={onClick}>
     <p className="text-center text-xl">{title}</p>
     <p className='mb-5 text-center'>{description}</p>
     <Image src={src} alt={title} width={800} height={450} />

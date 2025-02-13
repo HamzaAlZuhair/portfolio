@@ -8,9 +8,9 @@ export default function Certifications (){
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-evenly bg-[#0a0a0a]">
       <p className="text-4xl font-[consolas] text-center my-5">Certifications</p>
-        <div className="flex flex-col md:flex-row gap-10 justify-evenly items-center w-full p-5">
+        <div className="flex flex-col md:grid md:grid-cols-3 md:items-stretch gap-10 justify-evenly items-center w-full p-5">
           <Certficate
-            title="Responsive Web Desgin"
+            title="Responsive Web Design"
             description="Learned how to design responsive web pages using HTML, CSS, and JavaScript"
             link="https://www.freecodecamp.org/certification/hamza_al_zuhair/responsive-web-design"
             src="/responsive-web-design.png"
@@ -18,14 +18,16 @@ export default function Certifications (){
           />
           <Certficate
             title="JavaScript Algorithms and Data Structures"
-            description="Learned how to design responsive web pages using HTML, CSS, and JavaScript"
+            description="Covered JS variables, arrays, objects, loops, functions, the HTML DOM,
+              along with Object Oriented Programming (OOP), Functional Programming, algorithmic thinking, how to work with local storage,
+              and how to fetch data using an API."
             link="https://www.freecodecamp.org/certification/hamza_al_zuhair/javascript-algorithms-and-data-structures-v8"
             src="/javascript-algorithms-and-data-structures.png"
             onClick={() => setProject('JS Algorithms and Data Structures')}
           />
           <Certficate
             title="Front End Development Libraries"
-            description="Learned how to design responsive web pages using HTML, CSS, and JavaScript"
+            description="Covered React, Redux, Sass, Bootstrap, and jQuery"
             link="https://www.freecodecamp.org/certification/hamza_al_zuhair/front-end-development-libraries  "
             src="/front-end-development-libraries.png"
             onClick={() => setProject('Front End Development Libraries')}
