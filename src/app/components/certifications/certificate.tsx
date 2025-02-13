@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Roboto } from 'next/font/google';
-import { on } from 'events';
+
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 interface CertificateProps {
   title: string;

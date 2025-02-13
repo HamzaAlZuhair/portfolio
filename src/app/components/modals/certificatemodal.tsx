@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import {SlClose} from 'react-icons/sl';
-import { Roboto } from 'next/font/google';
-const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 
 export default function CertificateModal({imgSrc, onClose}: {imgSrc: string, onClose : () => void}) {
   return(

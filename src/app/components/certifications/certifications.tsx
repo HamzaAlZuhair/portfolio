@@ -21,17 +21,19 @@ export default function Certifications (){
             description="Learned how to design responsive web pages using HTML, CSS, and JavaScript"
             link="https://www.freecodecamp.org/certification/hamza_al_zuhair/javascript-algorithms-and-data-structures-v8"
             src="/javascript-algorithms-and-data-structures.png"
-            onClick={() => setProject('Responsive Web Design')}
+            onClick={() => setProject('JS Algorithms and Data Structures')}
           />
           <Certficate
             title="Front End Development Libraries"
             description="Learned how to design responsive web pages using HTML, CSS, and JavaScript"
             link="https://www.freecodecamp.org/certification/hamza_al_zuhair/front-end-development-libraries  "
             src="/front-end-development-libraries.png"
-            onClick={() => setProject('Responsive Web Design')}
+            onClick={() => setProject('Front End Development Libraries')}
           />
         </div>
         {project === "Responsive Web Design" && <CertificateModal imgSrc="/responsive-web-design.png" onClose={() => setProject("")} />}
+        {project === "JS Algorithms and Data Structures" && <CertificateModal imgSrc="/javascript-algorithms-and-data-structures.png" onClose={() => setProject("")} />}
+        {project === "Front End Development Libraries" && <CertificateModal imgSrc="/front-end-development-libraries.png" onClose={() => setProject("")} />}
     </div>
   )
 }
