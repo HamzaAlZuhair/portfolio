@@ -1,9 +1,9 @@
 import { FaGithub } from 'react-icons/fa';
-import { Mona_Sans, Roboto } from 'next/font/google';
+import { Mona_Sans } from 'next/font/google';
 import { SiUpwork } from 'react-icons/si';
 
 const mona_sans = Mona_Sans({ subsets: ['latin'] });
-const roboto = Roboto({ weight: '400', subsets: ['latin'] });
+
 export default function Contact() {
   return(
     <div id='contact' className='flex flex-col gap-5 justify-evenly items-center p-5 h-[50vh] md:h-screen font-[consolas] text-4xl bg-[#0a0a0a]'>
